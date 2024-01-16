@@ -600,6 +600,10 @@
         <layout>Account-Company</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Account-Company</layout>
+        <recordType>Account.Company</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>AlternativePaymentMethod-Alternative Payment Method Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -793,6 +797,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Job Application</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Job Application</layout>
+        <recordType>Opportunity.Job_Application</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
@@ -1016,6 +1024,16 @@
         <object>Opportunity</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Account.Company</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Opportunity.Job_Application</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>

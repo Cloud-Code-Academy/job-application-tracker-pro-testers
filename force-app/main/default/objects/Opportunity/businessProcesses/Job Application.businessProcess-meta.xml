@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job Application</fullName>
+    <description>Job Application Sales Process</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Accepted</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Applied</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Applying</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Interviewing</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Negotiating</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Saved</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

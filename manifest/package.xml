@@ -16,6 +16,14 @@
         <members>Opportunity</members>
         <name>CustomObject</name>
    </types>
+      <types>
+        <members>Location</members>
+        <name>CustomObject</name>
+    <types>
+        <members>LegalEntity</members>
+        <name>CustomObject</name>
+   </types>
+   </types>
    <types>
     <members>*</members>
     <name>ApexClass</name>

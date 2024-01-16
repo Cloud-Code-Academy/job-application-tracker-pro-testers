@@ -4,6 +4,10 @@
         <members>Account</members>
         <name>CustomObject</name>
    </types>
+      <types>
+        <members>Contact</members>
+        <name>CustomObject</name>
+   </types>
    <types>
         <members>Lead</members>
         <name>CustomObject</name>

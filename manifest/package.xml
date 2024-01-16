@@ -4,7 +4,55 @@
         <members>Account</members>
         <name>CustomObject</name>
    </types>
+   <types>
+        <members>Opportunity.Application_Date__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.StageName</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.Position_Title__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.Application_Date__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.Salary__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.URL__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.Description__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.Location__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.Follow_Up_Date__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.Rating__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
+        <members>Opportunity.Notes__c</members>
+        <name>CustomField</name>
+   </types>
       <types>
+        <members>Opportunity.Primary_Contact__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
         <members>Contact</members>
         <name>CustomObject</name>
    </types>
@@ -13,16 +61,12 @@
         <name>CustomObject</name>
     </types>
    <types>
-        <members>Opportunity</members>
-        <name>CustomObject</name>
-   </types>
-      <types>
         <members>Location</members>
         <name>CustomObject</name>
+    </types>
     <types>
         <members>LegalEntity</members>
         <name>CustomObject</name>
-   </types>
    </types>
    <types>
     <members>*</members>
@@ -50,35 +94,11 @@
   </types>
   <types>
     <members>*</members>
-    <name>AuthProvider</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>BrandingSet</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>CallCenter</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>CleanDataService</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>Community</name>
-  </types>
-  <types>
-    <members>*</members>
     <name>CompactLayout</name>
   </types>
   <types>
     <members>*</members>
     <name>ConnectedApp</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>CorsWhitelistOrigin</name>
   </types>
   <types>
     <members>*</members>

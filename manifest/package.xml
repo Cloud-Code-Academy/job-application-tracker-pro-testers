@@ -54,10 +54,6 @@
   </types>
   <types>
     <members>*</members>
-    <name>CampaignInfluenceModel</name>
-  </types>
-  <types>
-    <members>*</members>
     <name>CleanDataService</name>
   </types>
   <types>

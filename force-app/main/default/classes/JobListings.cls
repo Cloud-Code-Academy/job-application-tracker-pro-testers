@@ -1,14 +1,13 @@
 public with sharing class JobListings {
 
-    private static final String JOOBLE_API_URL = 'https://jooble.org/api';
-    private static final String JOOBLE_API_KEY = '467b2fde-136e-44c0-a06d-6f35638424cb';
+    //private static final String JOOBLE_API_URL = 'https://jooble.org/api/';
+    //private static final String JOOBLE_API_KEY = '467b2fde-136e-44c0-a06d-6f35638424cb';
     
     public static void getJobListingsFromJooble() {
         //Callout to Jooble Web Site
         
         HttpRequest request = new HttpRequest();
-        request.setEndpoint('JOOBLE_API_URL');
-        request.setHeader('Authorization' + JOOBLE_API_KEY);
+        request.setEndpoint('callout:JoobleAPI');
         request.setMethod('GET');
 
         Http http = new Http();

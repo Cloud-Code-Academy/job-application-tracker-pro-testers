@@ -1,54 +1,48 @@
-global class InterviewReminderScheduledJob implements Schedulable {
+public class InterviewReminderScheduledJob implements Schedulable {
     
-    global void execute(SchedulableContext ctx) {
-        sendInterviewReminders();
-    }
+    public void execute(SchedulableContext ctx) {
+     
+        //Calculate the date of the day before the interview
+        Date tomorrow = Date.today().addDays(1);
 
-    public static void sendInterviewReminders() {
         // Query events (interviews) with a start date of tomorrow
-        Date tomorrow = System.today().addDays(1);
-        List<Event> interviewsTomorrow = [SELECT Id, Subject, StartDateTime, Location, Owner.Email
-                                       FROM Event
-                                       WHERE StartDateTime = :tomorrow];
+        List<Event> interviewsTomorrow = [  SELECT 
+                                                Id, 
+                                                Subject, 
+                                                StartDateTime, 
+                                                Location, 
+                                                Owner.Email
+                                            FROM Event
+                                            WHERE StartDateTime = :tomorrow];
+
+        List<Messaging.SingleEmailMessage> reminderEmails = new List<Messaging.SingleEmailMessage>();
 
         // Iterate over the events (interviews) and send reminders
         for (Event event : interviewsTomorrow) {
-            sendReminderEmail(event);
+            String subject = 'Reminder: ' + event.Subject;
+            String body = 'Hi ' + event.OwnerId + ',\n\n'
+            + 'This is a reminder for your interview scheduled for tomorrow: ' + event.StartDateTime + '\n'
+            + 'Best of luck! \n' 
+            + 'You got this!';
+    
+            Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+            mail.setToAddresses(new List<String>{event.Assigned_To_Email__c});
+            mail.setSubject(subject);
+            mail.setHtmlBody(body);
+
+            reminderEmails.add(mail);
         }
-    }
-
-    private static void sendReminderEmail(Event event) {
-        String subject = 'Reminder: ' + event.Subject;
-        String body = getReminderEmailBody(event);
-
-        // Retrieve the owner's email address
-        String toAddress = event.Owner.email;
-
-        // Send the email
-        Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-        mail.setToAddresses(new String[] { toAddress });
-        mail.setSubject(subject);
-        mail.setHtmlBody(body);
-
-        // Send the email
-        Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
-    }
-
-    private static String getReminderEmailBody(Event event) {
-        // Retrieve template text from metadata 
-        String templateText = getTemplateText();
-
-        // Replace merge fields in the template with event details
-        templateText = templateText.replace('{!Event.Subject}', event.Subject);
-        templateText = templateText.replace('{!Event.StartDateTime}', String.valueOf(event.StartDateTime));
-        templateText = templateText.replace('{!Event.Location}', event.Location);
-
-        return templateText;
-    }
-
-    // 
-    private static String getTemplateText() {
+          // Send the email and handle errors
+          if(!reminderEmails.isEmpty()) {
+            Messaging.SendEmailResult[] sendResults = Messaging.sendEmail(reminderEmails);
+            for (Messaging.SendEmailResult result : sendResults) {
+                if (result.isSuccess()) {
+                    System.debug('Email reminder sent successfully.');
+                } else {
+                    System.debug('Failed to send email reminder. Error message: ' + result.getErrors()[0].getMessage());
+                }
+            }
         
-        return '<html><body><p>Interview Reminder: {!Event.Subject}</p><p>Date: {!Event.StartDateTime}</p><p>Location: {!Event.Location}</p></body></html>';
+       }
     }
 }

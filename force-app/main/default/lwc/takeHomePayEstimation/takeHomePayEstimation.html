@@ -2,7 +2,7 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 01-19-2024
+  @last modified on  : 01-21-2024
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
@@ -29,6 +29,26 @@
                   ></lightning-input>
                   <lightning-input
                       type="number"
+                      name="taxableincome"
+                      label="Taxable Income"
+                      value={taxableIncome}
+                      disabled
+                  ></lightning-input>
+                  <lightning-input
+                      type="number"
+                      name="takehomepay"
+                      label="Take Home Pay"
+                      value={takeHomePay}
+                      disabled
+                  ></lightning-input>
+                  </div>
+                  </div>
+      </div>
+            <div class="slds-grid slds-gutters">
+              <div class="slds-col">
+                <div class="slds-var-p-horizontal_small">
+                  <lightning-input
+                      type="number"
                       name="federalTax"
                       label="Federal Tax"
                       value={federalWithholding}
@@ -48,24 +68,11 @@
                       value={ssWithholding}
                       disabled
                   ></lightning-input>
-              </div>
+                        </div>
           </div>
           <div class="slds-col">
               <div class="slds-var-p-horizontal_small">
-                  <lightning-input
-                      type="number"
-                      name="taxableincome"
-                      label="Taxable Income"
-                      value={taxableIncome}
-                      disabled
-                  ></lightning-input>
-                  <lightning-input
-                      type="number"
-                      name="takehomepay"
-                      label="Take Home Pay"
-                      value={takeHomePay}
-                      disabled
-                  ></lightning-input>
+                  
                   <lightning-input
                       type="number"
                       name="semiannualpay"

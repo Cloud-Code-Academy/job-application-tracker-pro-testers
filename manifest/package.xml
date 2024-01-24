@@ -41,6 +41,14 @@
         <name>CustomField</name>
    </types>
    <types>
+        <members>Opportunity.Associated_Contacts__c</members>
+        <name>CustomField</name>
+   </types>
+      <types>
+        <members>Contact.Primary_Contact__c</members>
+        <name>CustomField</name>
+   </types>
+   <types>
         <members>Opportunity.Notes__c</members>
         <name>CustomField</name>
    </types>

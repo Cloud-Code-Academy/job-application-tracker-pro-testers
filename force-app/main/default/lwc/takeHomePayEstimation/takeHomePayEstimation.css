@@ -1,16 +1,4 @@
-.scoreText {
-    color: black;
-    font-size: xx-large;
-}
-.scoreValue {
+.taxHeader {
     color: red;
     font-size: xx-large;
-}
-.resourceList {
-    text-align: left;
-    font-size: 16px;
-    padding-top: 10px;
-}
-.resourceList li:first-child{
-    font-weight: 600;
 }

@@ -13,24 +13,29 @@ public class InterviewReminderScheduledJob implements Schedulable {
                                                 Location, 
                                                 Owner.Email
                                             FROM Event
-                                            WHERE StartDateTime = :tomorrow];
+                                            WHERE DAY_ONLY(StartDateTime) = :tomorrow];
+        System.debug(interviewsTomorrow);
 
         List<Messaging.SingleEmailMessage> reminderEmails = new List<Messaging.SingleEmailMessage>();
 
+        //Retrieve the email address(es) of the event owner(s)
+
+
         // Iterate over the events (interviews) and send reminders
-        for (Event event : interviewsTomorrow) {
+        for (Event event : interviewsTomorrow) {            
             String subject = 'Reminder: ' + event.Subject;
             String body = 'Hi ' + event.OwnerId + ',\n\n'
-            + 'This is a reminder for your interview scheduled for tomorrow: ' + event.StartDateTime + '\n'
+            + 'This is a reminder for your interview scheduled for tomorrow: ' + event.StartDateTime.format('yyyy-MM-dd HH:mm:ss') + '\n'
             + 'Best of luck! \n' 
             + 'You got this!';
-    
+            System.debug(event.Owner.Email);
             Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
-            mail.setToAddresses(new List<String>{event.Assigned_To_Email__c});
+            mail.setToAddresses(new List<String>{event.Owner.Email});
             mail.setSubject(subject);
-            mail.setHtmlBody(body);
+            mail.setPlainTextBody(body);
 
             reminderEmails.add(mail);
+            
         }
           // Send the email and handle errors
           if(!reminderEmails.isEmpty()) {
@@ -44,5 +49,12 @@ public class InterviewReminderScheduledJob implements Schedulable {
             }
         
        }
+    }
+    public static void scheduleJob() {
+        String jobName = 'ReminderScheduledJob';
+        String cronExpression = '0 0 12 * * ?';
+
+        // Schedule the job
+        System.schedule(jobName, cronExpression, new InterviewReminderScheduledJob());
     }
 }

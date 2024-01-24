@@ -23,5 +23,11 @@ public class CloseStaleJobApplications implements Schedulable {
         System.debug('There are no job applications to close due to inactivity.');
         }
     }
+    public static void scheduleJob() {
+        String jobName = 'CloseStaleApplicationsJob';
+        String cronExpression = '0 0 12 * * ?';
 
+        // Schedule the job
+        System.schedule(jobName, cronExpression, new CloseStaleJobApplications());
+    }
 }

@@ -20,8 +20,8 @@ public class CloseStaleJobApplications implements Schedulable {
         // Update the status of stale job applications        
         update applicationsToUpdate;
     } else {
-        System.debug('There are no job applications to close due to inactivity. ');
+        System.debug('There are no job applications to close due to inactivity.');
+        }
     }
-}
 
 }

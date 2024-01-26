@@ -2,16 +2,15 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 01-21-2024
+  @last modified on  : 01-24-2024
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
-  <lightning-button variant="brand" class="slds-var-m-left_x-small"></lightning-button>
   <lightning-card title="Take Home Pay Calculator">
       <lightning-button variant="brand"  label="Calculate" title="Calculate" slot="actions" onclick={handleCalculate}></lightning-button>
       <div class="slds-grid slds-gutters">
           <div class="slds-col">
-              <div class="slds-var-p-horizontal_small">        
+            <div class="slds-var-p-horizontal_small">       
                   <lightning-input
                       type="number"
                       name="income"
@@ -42,11 +41,15 @@
                       disabled
                   ></lightning-input>
                   </div>
-                  </div>
+            </div>
       </div>
-            <div class="slds-grid slds-gutters">
-              <div class="slds-col">
-                <div class="slds-var-p-horizontal_small">
+      <div>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+              <div class="slds-var-p-horizontal_small">   
+                <div class="taxHeader">
+                    <p>Taxes</p>
+                </div>
                   <lightning-input
                       type="number"
                       name="federalTax"
@@ -68,11 +71,17 @@
                       value={ssWithholding}
                       disabled
                   ></lightning-input>
-                        </div>
-          </div>
-          <div class="slds-col">
-              <div class="slds-var-p-horizontal_small">
-                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="slds-grid slds-gutters">
+         <div class="slds-col">
+            <div class="slds-var-p-horizontal_small">   
+              <div class="taxHeader">
+                <p>Pay Breakdown </p> 
+              </div>
                   <lightning-input
                       type="number"
                       name="semiannualpay"
@@ -95,7 +104,8 @@
                       disabled
                   ></lightning-input>
               </div>
-          </div>
-      </div>
+         </div>
+        </div>
+    </div>
   </lightning-card>
 </template>

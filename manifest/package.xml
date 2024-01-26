@@ -4,6 +4,10 @@
         <members>Account</members>
         <name>CustomObject</name>
    </types>
+      <types>
+        <members>Account.Primary_Contact__c</members>
+        <name>CustomField</name>
+   </types>
    <types>
         <members>Opportunity.Application_Date__c</members>
         <name>CustomField</name>
@@ -281,6 +285,10 @@
     <name>WorkflowFieldUpdate</name>
   </types>
   <types>
+  <types>
+    <members>*</members>
+    <name>PermissionSet</name>
+  </types>
     <members>*</members>
     <name>WorkflowRule</name>
     <version>59.0</version>

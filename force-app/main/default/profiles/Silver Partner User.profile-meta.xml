@@ -115,6 +115,18 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>AssociateContactHandler</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AssociateContactHandlerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>OpportunityTriggerHandlerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -145,6 +157,11 @@
         <editable>false</editable>
         <field>Account.CleanStatus</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Contact__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -220,6 +237,11 @@
         <editable>true</editable>
         <field>Account.Phone</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Primary_Contact__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -428,6 +450,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contact.Primary_Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contact.Pronouns</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -583,6 +610,91 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>LegalEntity.CompanyName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LegalEntity.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LegalEntity.LegalEntityAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>LegalEntity.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.CloseDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.ConstructionEndDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.ConstructionStartDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.Description</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.DrivingDirections</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.Location</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.LocationLevel</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.OpenDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.ParentLocationId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.PossessionDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.RemodelEndDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.RemodelStartDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Location.TimeZone</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -594,6 +706,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Application_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Associated_Contacts__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -714,6 +831,46 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.URL__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tax__c.Salary__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tax__c.X10_Tax_Bracket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tax__c.X12_Tax_Bracket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tax__c.X22_Tax_Bracket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tax__c.X24_Tax_Bracket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tax__c.X32_Tax_Bracket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tax__c.X35_Tax_Bracket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Tax__c.X37_Tax_Bracket__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <layoutAssignments>
@@ -926,6 +1083,9 @@
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>OpportunityTeamMember-Opportunity Team Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Order-Order Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1049,6 +1209,9 @@
         <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Tax__c-Tax Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ThreatDetectionFeedback-Threat Detection Feedback Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1144,6 +1307,15 @@
         <object>Lead</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Location</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
     <recordTypeVisibilities>
         <default>true</default>
         <recordType>Account.Company</recordType>
@@ -1155,6 +1327,18 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>Job_Application</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Take_Home_Pay_Estimation</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tax__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -1164,6 +1348,14 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Lead</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-LegalEntity</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Location</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

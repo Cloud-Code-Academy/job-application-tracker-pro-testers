@@ -59,6 +59,10 @@
                 <behavior>Edit</behavior>
                 <field>Primary_Contact__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Associated_Contacts__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

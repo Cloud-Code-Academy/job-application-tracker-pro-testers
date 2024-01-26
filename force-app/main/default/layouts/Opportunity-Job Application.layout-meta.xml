@@ -57,6 +57,10 @@
                 <behavior>Edit</behavior>
                 <field>Notes__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Associated_Contacts__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -126,6 +130,12 @@
         <fields>CORE.USERS.FULL_NAME</fields>
         <fields>TASK.LAST_UPDATE</fields>
         <relatedList>RelatedHistoryList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>MemberName</fields>
+        <fields>OppAccessLevel</fields>
+        <fields>TeamMemberRole</fields>
+        <relatedList>RelatedOpportunitySalesTeam</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

@@ -14,8 +14,10 @@
     <label>Job Application</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
-    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Lead</tabs>
     <tabs>standard-Account</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>Take_Home_Pay_Estimation</tabs>
     <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Job_Application_UtilityBar</utilityBar>

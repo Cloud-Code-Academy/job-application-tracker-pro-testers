@@ -14,7 +14,7 @@ public class CloseStaleJobApplications implements Schedulable {
             List<Opportunity> applicationsToUpdate = new List<Opportunity>();
             for (Opportunity application : staleJobApplications) {
                 application.StageName = 'Closed';
-                application.Description = 'Closed due to inactivity.';
+                application.Notes__c = 'Closed due to inactivity.';
                 applicationsToUpdate.add(application);
         }
         // Update the status of stale job applications        

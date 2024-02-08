@@ -44,6 +44,7 @@ public with sharing class JobApplicationTaskCreator{
         }
     }
 
+    @testVisible
     private static Task createTask(Id parentId, String taskSubject){
         Task newTask = new Task();
         newTask.WhatId = parentId; // Set the opportunity as the task's parent

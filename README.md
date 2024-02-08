@@ -1,37 +1,22 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13380499&assignment_repo_type=AssignmentRepo)
-# Job Application Tracker on Salesforce 🚀
+# Career Connect Project
+![image](https://github.com/Cloud-Code-Academy/job-application-tracker-pro-testers/assets/27503579/8141e350-5347-4024-bdcc-8a2460b22405)
 
-Dive into the Salesforce platform and channel its capabilities to redefine your job application tracking experience. This capstone project, a part of Cloud Code Academy's curriculum, aims to cultivate a proficient Salesforce developer out of you.
+Our application pulls in job listings via a REST API integration from Jooble into the Opportunity object in Salesforce. We decided to re-label the standard Opportunity object as "Job Application", as it already comes ready with the necessary infrastructure and  objects relationships (Company (Account), Contact, Tasks, Event, EmailMessage etc).
+You can find more details in the project [data dictionary](https://docs.google.com/spreadsheets/d/1QRfnGbLNfgtEUAKMYGZPw1dyLdoIZBDWgGTYrKgd_ag/edit?usp=sharing). 
 
-## About This Project 📖
+## Main Features of the Job Application App:
 
-Job searching can often become chaotic. With this project, we bring structure and efficiency into the process. Using Salesforce's versatile capabilities, you'll be building features that keep track of applications and add layers of automation, integration, and validation.
+- 
+- 
+Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-Key Features:
-- Reminders: Set automated reminders for upcoming interviews, follow-ups, or essential dates.
-- Validations: Assure the integrity of data with programmatic validations.
-- Salary Calculations: Implement dynamic functionalities for salary calculations based on set parameters.
-- Integration with Job Boards: Sync your application seamlessly with top job boards for updated tracking.
+## Configure Your Salesforce DX Project
 
-Navigating the Project 🧭
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-- Team or Solo: Opt to face this challenge solo or form a powerhouse team of up to three.
-- Organizational Setup: Work within individual Salesforce orgs and religiously update the designated GitHub repository.
-- Collaborate, But Stand Alone: While collaboration is the essence, ensure your team understands every project aspect.
-- Reach Out: The ambiguous nature of requirements simulates the real world. Always clarify doubts with your instructor.
+## Read All About It
 
-Key Recommendations 📝
-
-- Embrace Ambiguity: Not all requirements might see completion - and that's okay!
-- Management Tools: Organize and prioritize using tools like Trello or Jira.
-- Code Over Click: Although tempting, emphasize coded solutions over Salesforce's declarative features.
-- Fresh Start: Start with a fresh Trailhead Playground or Developer org to avoid existing automation or configuration.
-
-## Helpful Resources 🛠️
-
-- [Apex Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dev_guide.htm)
-- [Salesforce Stack Exchange](https://salesforce.stackexchange.com/)
-- [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
-- [Salesforce Extensions for Visual Studio Code](https://developer.salesforce.com/tools/vscode/)
-
-Remember, the coding journey is filled with exploration, mistakes, learning, and growth. Enjoy this process, and here's wishing you success in your Salesforce journey with Cloud Code Academy! 🌟
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
+- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)

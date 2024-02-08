@@ -1,9 +1,13 @@
-# Salesforce DX Project: Next Steps
+# Career Connect Project
+![image](https://github.com/Cloud-Code-Academy/job-application-tracker-pro-testers/assets/27503579/8141e350-5347-4024-bdcc-8a2460b22405)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Our application pulls in job listings via a REST API integration from Jooble into the Opportunity object in Salesforce. We decided to re-label the standard Opportunity object as "Job Application", as it already comes ready with the necessary infrastructure and  objects relationships (Company (Account), Contact, Tasks, Event, EmailMessage etc).
+You can find more details in the project [data dictionary](https://docs.google.com/spreadsheets/d/1QRfnGbLNfgtEUAKMYGZPw1dyLdoIZBDWgGTYrKgd_ag/edit?usp=sharing). 
 
-## How Do You Plan to Deploy Your Changes?
+## Main Features of the Job Application App:
 
+- 
+- 
 Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
 ## Configure Your Salesforce DX Project

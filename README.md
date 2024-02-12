@@ -5,7 +5,7 @@ Our application pulls in job listings via a REST API integration from Jooble int
 You can find more details in the project [data dictionary](https://docs.google.com/spreadsheets/d/1QRfnGbLNfgtEUAKMYGZPw1dyLdoIZBDWgGTYrKgd_ag/edit?usp=sharing). 
 
 ## Main Features of the Job Application App:
-- Integration with the [Jooble](jooble.org) job web site
+- Integration with the [Jooble](www.jooble.org) job web site
 - 
 Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 

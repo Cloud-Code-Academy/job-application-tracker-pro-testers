@@ -11,13 +11,6 @@ You can find more details in the project [data dictionary](https://docs.google.c
 - Automatic interview reminders and stale application closing functionality
 - Email automation
 
-## Configure Your Salesforce DX Project
+## Project Links
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- [Presentation Slides](https://docs.google.com/presentation/d/1HTADHIew0k14yBcA33j5PulolTrHObb6A3MMHf29b6Q/edit#slide=id.g2b4708f2f0b_1_75)

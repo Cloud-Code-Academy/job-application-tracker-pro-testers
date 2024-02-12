@@ -6,8 +6,10 @@ You can find more details in the project [data dictionary](https://docs.google.c
 
 ## Main Features of the Job Application App:
 - Integration with the [Jooble](www.jooble.org) job web site
-- 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- Functionality to track applications
+- Automatic task creation based on job application stage
+- Automatic interview reminders and stale application closing functionality
+- Email automation
 
 ## Configure Your Salesforce DX Project
 

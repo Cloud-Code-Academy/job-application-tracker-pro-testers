@@ -12,6 +12,11 @@ You can find more details in the project [data dictionary](https://docs.google.c
 - Email automation
 
 ## Project Links
-
 - [Presentation Slides](https://docs.google.com/presentation/d/1HTADHIew0k14yBcA33j5PulolTrHObb6A3MMHf29b6Q/edit#slide=id.g2b4708f2f0b_1_75)
 - [Data Dictionary](https://docs.google.com/spreadsheets/d/1QRfnGbLNfgtEUAKMYGZPw1dyLdoIZBDWgGTYrKgd_ag/edit?usp=sharing)
+
+## Project Participants
+- [Kristie Brown](http://www.linkedin.com/in/kristie-brown-ks)
+- [LaToya Beverly](https://www.linkedin.com/in/toyabev/)
+- [Kadir Suleymanoglu](https://www.linkedin.com/in/kadir-suleymanoglu-salesforce/)
+

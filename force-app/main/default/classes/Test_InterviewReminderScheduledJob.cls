@@ -17,7 +17,7 @@ private class Test_InterviewReminderScheduledJob {
         );
         insert interviewee;
 
-        //Create Event (Interview) record
+        //Create the Event (Interview) record
         Date tomorrow = Date.today().addDays(1);
         Event interviewEvent = new Event(
             Subject = 'Test Interview',

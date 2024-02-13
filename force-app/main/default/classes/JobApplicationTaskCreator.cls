@@ -33,6 +33,8 @@ public with sharing class JobApplicationTaskCreator{
                 tasksToInsert.add(createTask(ja.Id, 'Plan my resignation'));
                 tasksToInsert.add(createTask(ja.Id, 'Plan a short vacation before starting the new job'));
                 tasksToInsert.add(createTask(ja.Id, 'Prepare for my first day of onboarding'));
+                //Send a thank you email to primary contact
+                EmailAutomation.sendThankYouEmailOnAccept();
             } else if (ja.StageName == 'Closed'){
                 tasksToInsert.add(createTask(ja.Id, 'Send a follow-up email thanking the interviewer and asking for feedback'));
                 tasksToInsert.add(createTask(ja.Id, 'Review my notes and reflect on areas of improvement'));

@@ -80,7 +80,7 @@ public class JobListings implements Schedulable{
         String jobName = 'JoobleListingsJob';
         String cronExpression = '0 0 12 * * ?';
 
-        // Schedule the job
+        // Schedule job
         System.schedule(jobName, cronExpression, new JobListings());
     }
 

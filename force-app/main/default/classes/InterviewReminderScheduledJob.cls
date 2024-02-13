@@ -16,7 +16,7 @@ public class InterviewReminderScheduledJob implements Schedulable {
                                         AND Reminder_Sent__c = false
                                         ];
 
-        //create list of email reminders to send
+        //create a list of email reminders to send
         List<Messaging.SingleEmailMessage> reminderEmails = new List<Messaging.SingleEmailMessage>();
 
         // Iterate over the events (interviews) and send reminders

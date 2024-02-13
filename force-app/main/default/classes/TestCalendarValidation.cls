@@ -4,7 +4,7 @@ public class TestCalendarValidation {
     // Test method for checkforExistingInterviews
     @isTest
     static void testCheckforExistingInterviews() {
-        // Create test data
+        // Create interview test data
         List<Event> newInterviews = new List<Event>();
         Event e1 = new Event(StartDateTime = DateTime.newInstance(2023, 12, 11, 10, 0, 0), EndDateTime = DateTime.newInstance(2023, 12, 11, 11, 0, 0));
         Event e2 = new Event(StartDateTime = DateTime.newInstance(2023, 12, 12, 10, 0, 0), EndDateTime = DateTime.newInstance(2023, 12, 12, 11, 0, 0));

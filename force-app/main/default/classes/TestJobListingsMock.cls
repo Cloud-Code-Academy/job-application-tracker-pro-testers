@@ -1,6 +1,6 @@
 @IsTest
 global class TestJobListingsMock implements HttpCalloutMock {    
-    //mocks HTTP callout
+    //mocks a HTTP callout
     global HttpResponse respond(HttpRequest req) {
         HttpResponse res = new HttpResponse();
         res.setHeader('Content-Type', 'application/json');

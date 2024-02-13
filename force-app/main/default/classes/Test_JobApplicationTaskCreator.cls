@@ -35,7 +35,7 @@ private class Test_JobApplicationTaskCreator {
     // Test method for createTask
     @isTest
     static void testCreateTask() {
-        // Create test opportunity
+        // Create test opportunity record
         Opportunity testOpp = new Opportunity(Name = 'Test Opp', StageName = 'Saved', CloseDate = System.today().addDays(11));
         insert testOpp;
 

@@ -23,7 +23,7 @@ public with sharing class EmailAutomation {
                 emailMsg.setTargetObjectId(con.Id);
                 emailMsg.setSaveAsActivity(false); // Set to true if email is to be saved as an activity
 
-                //Check the ThankYouEmailSent__c field to prevent resending email
+                //Check the ThankYouEmailSent__c field to prevent resending email to previously emailed contacts.
                 opp.ThankYouEmailSent__c = true;
 
                 emailList.add(emailMsg);                

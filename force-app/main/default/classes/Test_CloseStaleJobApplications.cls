@@ -13,12 +13,12 @@ public class Test_CloseStaleJobApplications {
         insert testOpportunity;
 
         Test.startTest();
-        // Execute the scheduled job immediately
+        // Execute scheduled job immediately
         CloseStaleJobApplications scheduledJob = new CloseStaleJobApplications();
         scheduledJob.execute(null);
         Test.stopTest();
 
-        // Verify that the opportunity is closed
+        // Verify opportunity is closed
         List<Opportunity> updatedOpportunity = [SELECT Id, StageName, Description FROM Opportunity WHERE Id = :testOpportunity.Id];
         System.assertEquals(1, updatedOpportunity.size(), 'Expected one Opportunity that was cloaed due to inactivity.');
     }

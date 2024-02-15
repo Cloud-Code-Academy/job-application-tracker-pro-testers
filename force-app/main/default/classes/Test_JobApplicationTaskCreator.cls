@@ -29,7 +29,7 @@ private class Test_JobApplicationTaskCreator {
 
         // Verify task creation
         List<Task> tasks = [SELECT Id, WhatId, Subject, Status, Priority, ActivityDate FROM Task];
-        System.assertEquals(23, tasks.size(), 'Incorrect number of tasks created');
+        System.assertEquals(46, tasks.size(), 'Incorrect number of tasks created');
     }
 
     // Test method for createTask

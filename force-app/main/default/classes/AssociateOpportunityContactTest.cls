@@ -11,7 +11,7 @@ private class AssociateOpportunityContactTest {
         insert opp;
         
         // Ensure that Primary_Contact__c on Account is populated
-        acc.Primary_Contact__c = 'Test Primary Contact';
+        acc.Primary_Contact__c = '003Hp00002xjzxgIAA';
         update acc;
         
         // Ensure that Primary_Contact__c on Opportunity is null
@@ -26,6 +26,6 @@ private class AssociateOpportunityContactTest {
         Opportunity updatedOpp = [SELECT Id, Primary_Contact__c FROM Opportunity WHERE Id = :opp.Id];
         
         // Assert that the Primary_Contact__c field on the Opportunity is populated with the value from the Account
-        System.assertEquals('Test Primary Contact', updatedOpp.Primary_Contact__c, 'Primary contact not copied correctly');
+        System.assertEquals('003Hp00002xjzxgIAA', updatedOpp.Primary_Contact__c, 'Primary contact not copied correctly');
     }
 }
